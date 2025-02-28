@@ -1,0 +1,122 @@
+body {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    background-color: hsl(210, 46%, 95%);
+    font-family: "Manrope", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: hsl(217, 19%, 35%);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 375px) {
+    .card {
+        display: flex;
+        max-width: 375px;
+        height: auto;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    
+    .card .picture>img {
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card .text {
+        margin: 30px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    .card .titre {
+        font-weight: 700;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    
+    
+}
+
+@media (min-width: 376px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 730px;
+        border-radius: 10px;
+    }
+
+    .card .picture>img {
+        width: 286px;
+        border-radius: 10px 0 0 10px;
+    }
+}
+
+
+
+
+
+.card .description {
+    color: hsl(212, 23%, 69%);
+}
+
+.shareBloc {
+    display: flex;
+    flex-direction: row;
+    padding: 0 30px 30px;
+    align-items: center;
+}
+
+.shareBloc .photo {
+    width: 40px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.shareBloc .name {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.shareBloc .date {
+    color: hsl(212, 23%, 69%);
+}
+
+.shareButton {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin-left: auto;
+    border-radius: 100%;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.shareButton .share {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 20px;
+    height: fit-content;
+}
+
+
